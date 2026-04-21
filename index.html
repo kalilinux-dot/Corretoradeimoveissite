@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Modern Real Estate</title>
+    <meta name="description" content="Find your dream property today with Aura Real Estate. We offer the best deals and trusted consulting.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Aura.</a>
+            <div class="nav-links">
+                <a href="#properties">Properties</a>
+                <a href="#services">Services</a>
+                <a href="#agents">Agents</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <button class="mobile-menu-btn icon-btn" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2075&q=80" alt="Modern Mansion" class="hero-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <h1 class="animate-up">Find Your Dream <br>Property Today</h1>
+                <p class="animate-up delay-1">Discover the most exclusive properties with our trusted agency. Unmatched service, premium listings, and expert guidance.</p>
+                <div class="hero-buttons animate-up delay-2">
+                    <a href="#properties" class="btn btn-primary btn-lg">Browse Properties</a>
+                    <a href="#contact" class="btn btn-outline btn-lg">Schedule a Visit</a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-bar animate-up delay-3">
+                    <form class="search-form" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" placeholder="City, Neighborhood...">
+                        </div>
+                        <div class="divider"></div>
+                        <div class="form-group">
+                            <label for="type">Property Type</label>
+                            <select id="type">
+                                <option value="">All Types</option>
+                                <option value="house">House</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="commercial">Commercial</option>
+                            </select>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="form-group">
+                            <label for="price">Price Range</label>
+                            <select id="price">
+                                <option value="">Any Price</option>
+                                <option value="0-500k">$0 - $500,000</option>
+                                <option value="500k-1m">$500,000 - $1,000,000</option>
+                                <option value="1m+">$1,000,000+</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary search-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Properties -->
+        <section id="properties" class="section bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Featured Properties</h2>
+                    <p>Explore our handpicked selection of premium real estate.</p>
+                </div>
+                <div class="properties-grid">
+                    <!-- Property Card 1 -->
+                    <div class="property-card reveal">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Villa" class="card-img">
+                            <span class="badge">For Sale</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="price">$1,250,000</h3>
+                            <h4 class="title">Beverly Hills Modern Villa</h4>
+                            <p class="location">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                123 Palm Ave, Los Angeles
+                            </p>
+                            <div class="features">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> 4 Beds</span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M5 20V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path><path d="M9 14h.01"></path><path d="M15 14h.01"></path><path d="M9 10h.01"></path><path d="M15 10h.01"></path></svg> 3 Baths</span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> 3,200 sqft</span>
+                            </div>
+                            <a href="#" class="btn btn-outline btn-full">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Property Card 2 -->
+                    <div class="property-card reveal delay-1">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Apartment" class="card-img">
+                            <span class="badge">For Rent</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="price">$4,500 <span>/ mo</span></h3>
+                            <h4 class="title">Luxury Downtown Penthouse</h4>
+                            <p class="location">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                45 Skyline Dr, New York
+                            </p>
+                            <div class="features">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> 2 Beds</span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M5 20V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path><path d="M9 14h.01"></path><path d="M15 14h.01"></path><path d="M9 10h.01"></path><path d="M15 10h.01"></path></svg> 2 Baths</span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> 1,500 sqft</span>
+                            </div>
+                            <a href="#" class="btn btn-outline btn-full">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Property Card 3 -->
+                    <div class="property-card reveal delay-2">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="House" class="card-img">
+                            <span class="badge">For Sale</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="price">$850,000</h3>
+                            <h4 class="title">Cozy Suburban Retreat</h4>
+                            <p class="location">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                789 Oak Ln, Austin
+                            </p>
+                            <div class="features">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> 3 Beds</span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M5 20V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path><path d="M9 14h.01"></path><path d="M15 14h.01"></path><path d="M9 10h.01"></path><path d="M15 10h.01"></path></svg> 2 Baths</span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> 2,100 sqft</span>
+                            </div>
+                            <a href="#" class="btn btn-outline btn-full">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Insights -->
+        <section class="section">
+            <div class="container">
+                <div class="insights-container">
+                    <div class="insights-content reveal">
+                        <h2>Data-Driven Real Estate</h2>
+                        <p>Make informed decisions with our real-time market insights. We track property values, demand hotspots, and investment opportunities to get you the best deal.</p>
+                        <ul class="check-list">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Historical price trends</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Neighborhood growth forecasting</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> ROI analysis for investors</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">View Market Report</a>
+                    </div>
+                    <div class="insights-visual reveal delay-1">
+                        <div class="chart-mockup">
+                            <div class="chart-bar" style="height: 40%"></div>
+                            <div class="chart-bar" style="height: 55%"></div>
+                            <div class="chart-bar" style="height: 70%"></div>
+                            <div class="chart-bar" style="height: 60%"></div>
+                            <div class="chart-bar" style="height: 85%"></div>
+                            <div class="chart-bar" style="height: 100%"></div>
+                            <div class="chart-line"></div>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">+12.5%</span>
+                            <span class="stat-label">Avg. Annual Growth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Our Services</h2>
+                    <p>Comprehensive real estate solutions tailored to your needs.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        </div>
+                        <h3>Buy Property</h3>
+                        <p>Find the perfect home with our extensive listings and expert negotiation skills.</p>
+                    </div>
+                    <div class="service-card reveal delay-1">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        </div>
+                        <h3>Sell Property</h3>
+                        <p>Maximize your property's value with our data-driven marketing strategies.</p>
+                    </div>
+                    <div class="service-card reveal delay-2">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        </div>
+                        <h3>Rent Property</h3>
+                        <p>Discover high-quality rental homes and apartments in top neighborhoods.</p>
+                    </div>
+                    <div class="service-card reveal delay-3">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                        </div>
+                        <h3>Investment Consulting</h3>
+                        <p>Build wealth through strategic real estate investments and portfolio management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>What Our Clients Say</h2>
+                    <p>Trusted by hundreds of happy homeowners and investors.</p>
+                </div>
+                <div class="testimonials-container reveal delay-1">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                        <p class="quote">"Aura made buying our first home an absolute breeze. Their team was incredibly professional and found us exactly what we were looking for."</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson" class="client-img">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>Homeowner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                        <p class="quote">"As an investor, I rely heavily on data. Aura's market insights helped me secure two highly profitable properties this year."</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" alt="Michael Chen" class="client-img">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <span>Property Investor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                        <p class="quote">"Selling my apartment was stress-free. Their marketing approach is top-notch, and we closed above the asking price in just two weeks."</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" alt="Emma Rodriguez" class="client-img">
+                            <div>
+                                <h4>Emma Rodriguez</h4>
+                                <span>Seller</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agents Section -->
+        <section id="agents" class="section bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Meet Our Experts</h2>
+                    <p>Dedicated professionals ready to assist you.</p>
+                </div>
+                <div class="agents-grid">
+                    <div class="agent-card reveal">
+                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="James Wilson" class="agent-img">
+                        <div class="agent-info">
+                            <h3>James Wilson</h3>
+                            <p>Senior Broker</p>
+                            <a href="#contact" class="btn btn-outline btn-sm">Contact James</a>
+                        </div>
+                    </div>
+                    <div class="agent-card reveal delay-1">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Elena Martinez" class="agent-img">
+                        <div class="agent-info">
+                            <h3>Elena Martinez</h3>
+                            <p>Luxury Specialist</p>
+                            <a href="#contact" class="btn btn-outline btn-sm">Contact Elena</a>
+                        </div>
+                    </div>
+                    <div class="agent-card reveal delay-2">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="David Lee" class="agent-img">
+                        <div class="agent-info">
+                            <h3>David Lee</h3>
+                            <p>Investment Consultant</p>
+                            <a href="#contact" class="btn btn-outline btn-sm">Contact David</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Resources -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Real Estate Guides</h2>
+                    <p>Learn the ins and outs of the market with our expert articles.</p>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card reveal">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Buying Guide" class="resource-img">
+                        <div class="resource-content">
+                            <span class="category">Guide</span>
+                            <h3>How to Buy Your First Home</h3>
+                            <p>A step-by-step guide for first-time buyers looking to enter the market.</p>
+                            <a href="#" class="read-more">Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </div>
+                    <div class="resource-card reveal delay-1">
+                        <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Investment Tips" class="resource-img">
+                        <div class="resource-content">
+                            <span class="category">Investment</span>
+                            <h3>Real Estate Investment Tips</h3>
+                            <p>Maximize your ROI with these proven investment strategies for 2026.</p>
+                            <a href="#" class="read-more">Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Elements -->
+        <section class="section bg-primary trust-section text-center">
+            <div class="container reveal">
+                <h2>Trusted by Over 5,000 Clients</h2>
+                <div class="trust-badges">
+                    <div class="badge-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        <span>Secure Transactions</span>
+                    </div>
+                    <div class="badge-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M16 16s-1.5-2-4-2-4 2-4 2"></path><polyline points="9 9 9 9.01"></polyline><polyline points="15 9 15 9.01"></polyline></svg>
+                        <span>Certified Brokers</span>
+                    </div>
+                    <div class="badge-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        <span>Licensed Agency</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-container reveal">
+                    <div class="contact-info">
+                        <h2>Get in Touch with an Expert Today</h2>
+                        <p>Have questions about buying, selling, or renting? Our team is here to help you every step of the way.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>hello@aurarealestate.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>100 Business Pkwy, Suite 200<br>New York, NY 10001</span>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/15551234567" target="_blank" class="btn btn-whatsapp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                    <div class="contact-form-container">
+                        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">Aura.</a>
+                <p>Redefining the real estate experience with modern solutions and premium service.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#agents">Agents</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Buy Property</a></li>
+                    <li><a href="#">Sell Property</a></li>
+                    <li><a href="#">Rent Property</a></li>
+                    <li><a href="#">Investment Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Aura Real Estate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
